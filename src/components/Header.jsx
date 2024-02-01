@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineMonitorHeart } from "react-icons/md";
-import { RiAdminLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import logo from "/images/up_logo.svg";
 import "./Header.css";
@@ -9,15 +8,15 @@ import "./Header.css";
 const Header = () => {
   return (
     <Nav>
-      <Link className="logo-a" to="/urban-pergola/">
+      <Link className="logo-a" to="/">
         <img src={logo} alt="logo" />
       </Link>
       <NavMenu>
-        <Link to="/urban-pergola/">
+        <Link to="/">
           <FaHome className="icon" />
           <span>HOME</span>
         </Link>
-        <Link to="/urban-pergola/monitoring/">
+        <Link to="/monitoring/">
           <MdOutlineMonitorHeart className="icon" />
           <span>MONITORING</span>
         </Link>
