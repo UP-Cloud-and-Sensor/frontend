@@ -28,7 +28,7 @@ jobs:
       - name: Build project
         env:
           publicPath: ${{ format('/{0}/', github.event.repository.name) }}
-        run: npx tsc && npx vite build --base=$publicPath
+        run: npx vite build --base=$publicPath
 
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v1
